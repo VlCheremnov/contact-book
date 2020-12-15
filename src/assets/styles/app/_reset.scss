@@ -1,0 +1,44 @@
+@viewport {
+  user-zoom: fixed;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  color: $c-main;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+ul {
+  list-style: none;
+}
+
+a,
+button,
+input,
+textarea {
+  -webkit-appearance: none;
+  border-radius: 0;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}

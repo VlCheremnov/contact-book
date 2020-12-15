@@ -1,0 +1,16 @@
+.card {
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  border-bottom: 1px solid $c-accent;
+
+  &__icon {
+    width: 25px;
+    margin-right: 10px;
+    color: $c-accent;
+  }
+
+  &__name {
+    font-weight: 500;
+  }
+}

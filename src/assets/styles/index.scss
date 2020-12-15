@@ -1,0 +1,14 @@
+// Переменные
+@import 'app/variable';
+
+// Ресетим начальный стили
+@import 'app/reset';
+
+// Основные стили
+@import 'app/main';
+
+// Шапка
+@import 'app/header';
+
+// Карточка
+@import 'app/card';

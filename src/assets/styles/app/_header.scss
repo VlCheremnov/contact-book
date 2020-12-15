@@ -1,0 +1,9 @@
+.header {
+  background: $c-accent;
+  padding: 10px 15px;
+
+  &__title {
+    color: $c-light;
+    font-size: 25px;
+  }
+}

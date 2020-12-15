@@ -1,0 +1,12 @@
+.container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  border-right: 1px solid $c-accent;
+  border-left: 1px solid $c-accent;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
