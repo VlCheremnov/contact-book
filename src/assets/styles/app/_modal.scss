@@ -1,0 +1,28 @@
+.modal {
+  min-width: 300px;
+  background: $c-light;
+  box-shadow: 0 0 10px -5px $c-accent;
+
+  &-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba($c-accent, 0.3);
+    z-index: 5;
+  }
+
+  &__header {
+    color: $c-light;
+    background: $c-accent;
+  }
+
+  &__body {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+}

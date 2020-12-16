@@ -1,0 +1,26 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &__label {
+    color: $c-muted;
+    margin-bottom: 5px;
+  }
+
+  &__input {
+    border: 1px solid $c-accent;
+    border-radius: 3px;
+    padding: 5px 4px;
+    color: $c-main;
+  }
+
+  &__danger {
+    border-color: $c-danger;
+  }
+}

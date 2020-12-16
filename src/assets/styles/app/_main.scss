@@ -22,3 +22,14 @@
 .pointer {
   cursor: pointer;
 }
+
+.side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
