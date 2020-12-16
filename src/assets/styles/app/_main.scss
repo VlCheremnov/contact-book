@@ -2,11 +2,23 @@
   width: 100%;
   max-width: 400px;
   margin: 0 auto;
-  border-right: 1px solid $c-accent;
-  border-left: 1px solid $c-accent;
+  box-shadow: 0 0 10px -5px $c-accent;
+  border-bottom: 1px solid rgba($c-accent, 0.2);
+}
+
+.content {
+  padding: 8px 10px;
 }
 
 .list {
   display: flex;
   flex-direction: column;
+}
+
+.text-muted {
+  color: $c-muted;
+}
+
+.pointer {
+  cursor: pointer;
 }

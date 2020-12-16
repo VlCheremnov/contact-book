@@ -1,8 +1,23 @@
 .card {
   display: flex;
   align-items: center;
-  padding: 8px 10px;
-  border-bottom: 1px solid $c-accent;
+  position: relative;
+  margin-bottom: 1px;
+
+  &::before {
+    content: '';
+    width: 90%;
+    height: 1px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    background: rgba($c-accent, 0.2);
+  }
+
+  &:last-child::before {
+    content: none;
+  }
 
   &__icon {
     width: 25px;

@@ -1,0 +1,29 @@
+.dropdown {
+  z-index: 5;
+
+  &__list {
+    display: none;
+    border: 1px solid $c-accent;
+    border-top: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: $c-light;
+    color: $c-main;
+    z-index: 6;
+  }
+
+  &.active &__list {
+    display: block;
+  }
+
+  &__item {
+    white-space: nowrap;
+    font-weight: 500;
+  }
+
+  &__icon {
+    margin-right: 10px;
+    width: 20px;
+  }
+}

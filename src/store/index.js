@@ -1,5 +1,5 @@
 export const state = () => ({
-  users: []
+  users: null
 })
 
 export const mutations = {
@@ -10,7 +10,10 @@ export const mutations = {
 
 export const actions = {
   setUsers ({ commit }) {
-    const users = [{ name: 'user1', id: 1, customFields: [] }, { name: 'user2', id: 2, customFields: [] }]
+    const users = {
+      1: { name: 'user1', customFields: { Телефон: '+79963320562', email: 'check@gmail.ri' } },
+      2: { name: 'user2', customFields: [] }
+    }
     commit('setUsers', users)
   }
 }

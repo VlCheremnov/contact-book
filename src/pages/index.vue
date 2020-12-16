@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div>
     <!-- Шапка -->
     <header class="header">
       <!-- Заголовок -->
@@ -10,21 +10,28 @@
 
     <!-- Основной контент -->
     <main class="main list">
-      <!-- Карточка -->
-      <nuxt-link
-        v-for="(card, index) in $store.state.users"
-        :key="`card-${index}`"
-        :to="`/${card.id}`"
+      <template v-if="$store.state.users">
+        <!-- Карточка -->
+        <nuxt-link
+          v-for="(card, id) in $store.state.users"
+          :key="id"
+          :to="`/${id}`"
 
-        class="card"
-      >
-        <!-- Иконка -->
-        <img class="card__icon" src="contacts.svg" alt="Контакт">
+          class="card content"
+        >
+          <!-- Иконка -->
+          <img class="card__icon" src="contacts.svg" alt="Контакт">
 
-        <!-- Имя -->
-        <span class="card__name">{{ card.name }}</span>
-      </nuxt-link>
-      <!-- Конец карточки -->
+          <!-- Имя -->
+          <span class="card__name">{{ card.name }}</span>
+        </nuxt-link>
+        <!-- Конец карточки -->
+      </template>
+
+      <!-- Если нет контактов -->
+      <div v-else class="text-muted card">
+        <span class="card__name">Вы еще не добавили контакт :(</span>
+      </div>
     </main>
     <!-- Конец основного контента-->
   </div>
